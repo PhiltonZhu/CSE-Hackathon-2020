@@ -1,4 +1,12 @@
 .closedparcel {
-  height: 100px;
-  width: 100px;
+    position:relative;
+    left:-400px;
+    height: 250px;
+    width: 250px;
+}
+.buttonny {
+    position:relative;
+    left:-400px;
+    height: 250px;
+    width: 250px;
 }

@@ -2,20 +2,49 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.closedparcel {
+    position:relative;
+    height: 250px;
+    width: 250px;
 }
 
-.App-teset {
-    height: 100px;
-    width: 100px;
+.poggies1 {
+    color:gold;
+    font-size:75px;
+    font-family: Gyre Schola serif;
+    position: absolute;
+    left:650px;
+    top:44px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.poggies2 {
+    color:gold;
+    font-size:75px;
+    font-family: Gyre Schola serif;
+    position: absolute;
+    left:650px;
+    top:296px;
+}
+
+.poggies3 {
+    color:gold;
+    font-size:75px;
+    font-family: Gyre Schola serif;
+    position: absolute;
+    left:650px;
+    top:544px;
+}
+
+.topparcelheader {
+    color:gold;
+    font-size:60px;
+    font-family: Gyre Schola serif;
+}
+
+.topparcelchallenge {
+    color: gold;
+    left:-100px;
+    font-family: Andale Mono;
 }
 
 .App-header {
@@ -27,17 +56,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
