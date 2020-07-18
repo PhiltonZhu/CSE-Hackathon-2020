@@ -2,11 +2,15 @@ import React from 'react';
 import './App.css';
 import closedparcel from './closed-parcel.png';
 import { BrowserRouter as Router, Link} from 'react-router-dom';
-import { useHistory } from 'react-router';
 import { withRouter } from 'react-router-dom'
-import { Redirect } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 import Parcel from './components/Parcel';
+import refresh from './refresh.png'
+import upload from './upload.png'
+import Gallery from 'react-grid-gallery'
+import cheesecake1 from './cheesecake1.jpg'
+import cheesecake2 from './cheesecake2.jpeg'
+import cheesecake3 from './cheesecake3.jpeg'
 
 
 
@@ -68,19 +72,38 @@ class App extends React.Component {
                     <header className="App-header">
                     <div className='topparcelheader'><p>Thank you for opening me!</p></div>
                     <div className='topparcelchallenge'><p>  Parcel Challenge:</p></div>
-                    
+                    <div className='cheesecakeRecipe'>
+                    <p>Make a cheesecake by following the recipe below and upload a photo of your creation!</p>
+                    <p>Step 1: Preheat oven to 160°C/140°C fan-forced. Grease a 6cm-deep, 22cm round (base) spring-form cake pan.</p>
+                    <p>Step 2: Process biscuits until mixture resembles fine breadcrumbs. Add butter. Process until combined. Press mixture over base and sides of pan leaving a 2cm gap from top (see Cooking class). Refrigerate for 30 minutes.</p>
+                    <p>Step 3: Process cream cheese, sugar, sour cream, vanilla and lemon rind until smooth. Add eggs, 1 at a time, processing until just combined. Pour into prepared pan. Bake for 50 minutes to 1 hour or until just set and centre wobbles slightly. Allow to cool in oven for 2 hours, with door ajar. Refrigerate overnight. Serve with raspberries.</p>
+                    </div>
+                    <Link to="/"><img src={refresh} className="refresh"/></Link>
+                    <Link to="cheesecakeCommunity"><img src={upload} className="upload"/></Link>
                     </header>
                     </div>
                 )}
             }/>
             <Route path='/midparcel' exact strict render= {
                 () => { return (
+                    <div className="App">
                     <h1>IT WORKSS</h1>
+                    </div>
                 )}
             }/>
             <Route path='/botparcel' exact strict render= {
                 () => { return (
                     <h1>IT WORKSSS</h1>
+                )}
+            }/>
+            <Route path='/cheesecakeCommunity' exact strict render= {
+                () => { return (
+                    <div className="App">
+                    <header className="App-header">
+                    <div className='cheesecakeHeader'><p>Good job on completing your challenge! Check out other people's submissions below!</p></div>
+                    <Gallery images={cheesecake1,cheesecake2,cheesecake3}/>
+                    </header>
+                    </div>
                 )}
             }/>
           </Router>
