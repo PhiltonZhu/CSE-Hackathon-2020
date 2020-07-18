@@ -76,6 +76,30 @@
     font-family: Gyre Schola serif;
 }
 
+.cheesecake3 {
+    position:absolute;
+    left:380px;
+    bottom:95px;
+}
+.cheesecake2 {
+    position:absolute;
+    left:850px;
+    bottom:65px;
+}
+.cheesecake1 {
+    position:absolute;
+    bottom:85px;
+    top:45px;
+}
+
+.home {
+    position: absolute;
+    left:30px;
+    top:10px;
+    height:60px;
+    width:60px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

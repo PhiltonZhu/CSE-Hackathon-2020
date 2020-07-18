@@ -11,6 +11,7 @@ import Gallery from 'react-grid-gallery'
 import cheesecake1 from './cheesecake1.jpg'
 import cheesecake2 from './cheesecake2.jpeg'
 import cheesecake3 from './cheesecake3.jpeg'
+import home from './home.png'
 
 
 
@@ -32,10 +33,29 @@ class App extends React.Component {
                 description:'Draw a painting of your favourite food',
                 image:closedparcel
             }
-        ]
-    }
+        ],
 
+    images :
+[{
+        src: cheesecake1,
+        thumbnail: cheesecake1,
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+},
+{
+    src: cheesecake2,
+    thumbnail: cheesecake2,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+},
 
+{
+    src: cheesecake3,
+    thumbnail: cheesecake3,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212
+}]
+}
     render() {
       return (
           <Router>
@@ -100,8 +120,82 @@ class App extends React.Component {
                 () => { return (
                     <div className="App">
                     <header className="App-header">
-                    <div className='cheesecakeHeader'><p>Good job on completing your challenge! Check out other people's submissions below!</p></div>
-                    <Gallery images={cheesecake1,cheesecake2,cheesecake3}/>
+
+                    <div className='cheesecakeHeader'><p>Good job on completing your challenge! Check out other people's submissions!</p></div>
+                    <img src={cheesecake1} alt='Anonymous Upload' className='cheesecake1'/>
+                    <img src={cheesecake2} alt='Jennys Cheesecake'className='cheesecake2'/>
+                    <img src={cheesecake3} alt='Anynymouse!' className='cheesecake3'/>
+                    <Link to='/random'><img src={home} alt='return menu' className='home'/></Link>
+                    </header>
+
+                    </div>
+                )}
+            }/>
+            <Route path='/random' exact strict render= {
+                () => { return (
+                    <div className="App">
+                    <header className="App-header">
+
+                    <Link to="/random"><img src={this.state.parcels[0].image} alt="closedparcel" className="closedparcel"/></Link>
+
+                    <Link to="/random"><img src={this.state.parcels[1].image} alt="closedparcel" className="closedparcel"/></Link>
+
+                    <Link to="/discard"><img src={this.state.parcels[2].image} alt="closedparcel" className="closedparcel"/></Link>
+
+                    <div class="poggies1">
+                      <p>Rating: 4/5</p>
+                    </div>
+
+                    <div class="poggies2">
+                      <p>Rating: 4/5</p>
+                    </div>
+
+                    <div class="poggies3">
+                      <p>Rating: 3/5</p>
+                    </div>
+
+                    </header>
+                    </div>
+                )}
+            }/>
+            <Route path='/discard' exact strict render= {
+                () => { return (
+                    <div className="App">
+                    <header className="App-header">
+                    <div className='topparcelheader'><p>Thank you for opening me!</p></div>
+                    <div className='topparcelchallenge'><p>  Parcel Challenge:</p></div>
+                    <div className='cheesecakeRecipe'>
+                    <p>Plant 3 types of vegetables in your garden!</p>
+                    </div>
+                    <Link to="/new"><img src={refresh} className="refresh"/></Link>
+                    <Link to="/discard"><img src={upload} className="upload"/></Link>
+                    </header>
+                    </div>
+                )}
+            }/>
+            <Route path='/new' exact strict render= {
+                () => { return (
+                    <div className="App">
+                    <header className="App-header">
+
+                    <Link to="/new"><img src={this.state.parcels[0].image} alt="closedparcel" className="closedparcel"/></Link>
+
+                    <Link to="/new"><img src={this.state.parcels[1].image} alt="closedparcel" className="closedparcel"/></Link>
+
+                    <Link to="/new"><img src={this.state.parcels[2].image} alt="closedparcel" className="closedparcel"/></Link>
+
+                    <div class="poggies1">
+                      <p>Rating: 4/5</p>
+                    </div>
+
+                    <div class="poggies2">
+                      <p>Rating: 3/5</p>
+                    </div>
+
+                    <div class="poggies3">
+                      <p>Rating: 2/5</p>
+                    </div>
+
                     </header>
                     </div>
                 )}
