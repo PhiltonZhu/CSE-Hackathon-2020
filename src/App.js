@@ -73,13 +73,22 @@ class App extends React.Component {
                   <div class="poggies1">
                     <p>Rating: 5/5</p>
                   </div>
+                  <div class="hashtag1">
+                    <p>#Baking</p>
+                  </div>
 
                   <div class="poggies2">
                     <p>Rating: 3/5</p>
                   </div>
+                  <div class="hashtag2">
+                    <p>#Exercising</p>
+                  </div>
 
                   <div class="poggies3">
                     <p>Rating: 2/5</p>
+                  </div>
+                  <div class="hashtag3">
+                    <p>#Gardening</p>
                   </div>
 
                   </header>
@@ -145,13 +154,22 @@ class App extends React.Component {
                     <div class="poggies1">
                       <p>Rating: 4/5</p>
                     </div>
+                    <div class="hashtag1">
+                      <p>#Leisure</p>
+                    </div>
 
                     <div class="poggies2">
                       <p>Rating: 4/5</p>
                     </div>
+                    <div class="hashtag2">
+                      <p>#Baking</p>
+                    </div>
 
                     <div class="poggies3">
                       <p>Rating: 3/5</p>
+                    </div>
+                    <div class="hashtag3">
+                      <p>#Gardening</p>
                     </div>
 
                     </header>
@@ -187,13 +205,22 @@ class App extends React.Component {
                     <div class="poggies1">
                       <p>Rating: 4/5</p>
                     </div>
+                    <div class="hashtag1">
+                      <p>#Cooking</p>
+                    </div>
 
                     <div class="poggies2">
                       <p>Rating: 3/5</p>
                     </div>
+                    <div class="hashtag2">
+                      <p>#Knitting</p>
+                    </div>
 
                     <div class="poggies3">
                       <p>Rating: 2/5</p>
+                    </div>
+                    <div class="hashtag3">
+                      <p>#Renovation</p>
                     </div>
 
                     </header>
