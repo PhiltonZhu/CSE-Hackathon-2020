@@ -8,6 +8,31 @@
     width: 250px;
 }
 
+.title {
+    color:#7c795d;
+    font-size:130px;
+    font-family: Trocchi;
+}
+
+.link {
+  color:#7c795d;
+  text-decoration: none;
+
+}
+.link:hover {
+   color:#7c795d
+}
+
+.createButton {
+
+}
+
+.createButtonText {
+    color:#7c795d;
+    font-size:20px;
+    font-family: Trocchi;
+}
+
 .refresh {
     position:absolute;
     left:570px;
@@ -27,26 +52,26 @@
 .hashtag1 {
     position:absolute;
     color:#7c795d;
-    font-size:75px;
+    font-size:70px;
     font-family: Trocchi;
     right:70px;
-    top:44px;
+    top:95px;
 }
 .hashtag2 {
     position:absolute;
     color:#7c795d;
-    font-size:75px;
+    font-size:70px;
     font-family: Trocchi;
     right:70px;
-    top:296px;
+    top:350px;
 }
 .hashtag3 {
     position:absolute;
     color:#7c795d;
-    font-size:75px;
+    font-size:70px;
     font-family: Trocchi;
     right:70px;
-    top:544px;
+    top:600px;
 }
 
 .poggies1 {
@@ -55,7 +80,7 @@
     font-family: Trocchi;
     position: absolute;
     left:600px;
-    top:44px;
+    top:95px;
 }
 
 .poggies2 {
@@ -64,7 +89,7 @@
     font-family: 'Trocchi';
     position: absolute;
     left:600px;
-    top:296px;
+    top:350px;
 }
 
 .poggies3 {
@@ -73,7 +98,7 @@
     font-family: Gyre Schola serif;
     position: absolute;
     left:600px;
-    top:544px;
+    top:600px;
 }
 
 .topparcelheader {

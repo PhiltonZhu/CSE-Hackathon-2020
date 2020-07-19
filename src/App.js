@@ -59,6 +59,17 @@ class App extends React.Component {
     render() {
       return (
           <Router>
+            <Route path='/Immunity' exact strict render= {
+                () => { return (
+                    <div className="App">
+                    <header className="App-header">
+                    <div className="title">
+                    <Link to='/' className='link'><p>ImmUnity</p></Link>
+                    </div>
+                    </header>
+                    </div>
+                )}
+            }/>
             <Route path='/' exact strict render={
                 () => { return (
                   <div className="App">
@@ -222,7 +233,6 @@ class App extends React.Component {
                     <div class="hashtag3">
                       <p>#Renovation</p>
                     </div>
-
                     </header>
                     </div>
                 )}
